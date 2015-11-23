@@ -2,7 +2,7 @@ This Package is built for Homework8 of STAT547 course to explore the process of 
 
 There work flow of the building a package is well described in [Jenny's Write your own R package](http://stat545-ubc.github.io/hw10_package.html), also I have put my understandings and work flow in a `readme.rmd` for `homework8` here.
 
-### Prerequisits for installing the `foofactors` package
+### Steps for installing the `foofactors` package
 
 #### 1. Install and load `devtools`
 
