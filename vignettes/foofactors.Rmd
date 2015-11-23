@@ -1,0 +1,40 @@
+---
+title: "Homework8"
+author: "Golnaz Jahesh"
+date: "`Nov18,2015`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+## Functions in `foocators` package
+
+###fbind()
+Create a new factor from two existing factors, where the new factor's levels
+' are the union of the levels of the input factors.  
+
+`' @examples`
+' fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+
+###freq_out()
+
+This function writes frequency table for a factor.  
+
+`' @examples`
+'freq_out(iris$Species)
+
+###fgap_coefs()
+
+Computes linear and robust regression coefficients for gapminder excerpt data frame.  
+
+`' @examples`
+' fgap_coefs(gapminder::gapminder)
+
+###fgap_rw()
+
+This function could write and read data frames to plain text delimited files while
+'retaining factor level and by writing/reading a companion file?  
+
+`' @examples`
+' fgap_rw(gapminder::gapminder)

@@ -1,4 +1,4 @@
-test_that("fbind binds factors",{
+test_that("fbind binds factors(or characters)",{
   a <- iris$Species[c(1, 51, 101)]
   b <- PlantGrowth$group[c(1, 11, 21)]
   res <- fbind(a,b)

@@ -3,15 +3,20 @@ Title: Make Factors less annoying
 Version: 0.0.0.9000
 Authors@R: person("Golnaz", "Jahesh", email = "golnaz.jahesh@gmail.com", role = c("aut", "cre"))
 Description: Factors have driven people to extreme measures, like ordering
-    custom conference ribbons and laptop stickers to express how HELLNO we
+    custom conference ribbons and laptop stickers to express how we
     feel about stringsAsFactors. And yet, sometimes you need them. Can they
     be made less maddening? Let's find out.
 Depends: 
     R (>= 3.2.2)
-License: What license is it under?
+License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.0
-Suggests: testthat
-Imports: dplyr
+Suggests: testthat,
+    knitr,
+    rmarkdown
+Imports: dplyr,
+    robustbase,
+    gapminder
 URL: https://github.com/gjahesh/foofactors
 BugReports: https://github.com/gjahesh/foofactors/issues
+VignetteBuilder: knitr

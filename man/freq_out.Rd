@@ -7,14 +7,15 @@
 freq_out(x)
 }
 \arguments{
-\item{a}{factor}
-
-\item{b}{factor}
+\item{x}{factor}
 }
 \value{
-factor
+tbl_df
 }
 \description{
 write frequency table for a factor
+}
+\examples{
+freq_out(iris$Species)
 }
 
