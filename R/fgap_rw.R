@@ -1,5 +1,5 @@
-#'function to write and read data frames to plain text delimited files while
-#'retaining factor evels by using writing/reading a companion file'
+#'This function shows how takes the `gapmider` excerpt data frame and 
+#'compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.
 #'
 #' @param dat gapminder data frame
 #' @param na.rm removes NA (if any)

@@ -2,8 +2,8 @@
 % Please edit documentation in R/fgap_rw.R
 \name{fgap_rw}
 \alias{fgap_rw}
-\title{function to write and read data frames to plain text delimited files while
-retaining factor evels by using writing/reading a companion file'}
+\title{This function shows how takes the `gapmider` excerpt data frame and 
+compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.}
 \usage{
 fgap_rw(dat, na.rm = TRUE)
 }
@@ -16,8 +16,8 @@ fgap_rw(dat, na.rm = TRUE)
 txt and rds files and a mini data frame
 }
 \description{
-function to write and read data frames to plain text delimited files while
-retaining factor evels by using writing/reading a companion file'
+This function shows how takes the `gapmider` excerpt data frame and 
+compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.
 }
 \examples{
 fgap_rw(gapminder::gapminder)
