@@ -12,29 +12,29 @@ vignette: >
 
 ###fbind()
 Create a new factor from two existing factors, where the new factor's levels
-' are the union of the levels of the input factors.  
+are the union of the levels of the input factors.  
 
 `' @examples`
-' fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 
 ###freq_out()
 
 This function writes frequency table for a factor.  
 
 `' @examples`
-'freq_out(iris$Species)
+freq_out(iris$Species)
 
 ###fgap_coefs()
 
-Computes linear and robust regression coefficients for gapminder excerpt data frame.  
+Computes linear and robust regression coefficients for gapminder excerpt data frame. Description of the linear and robust coeffcients could be found [Homework4-Section2](https://github.com/STAT545-UBC/golnaz_jahesh/blob/master/STAT545_Homework/homework4/hw4_func.md)
 
 `' @examples`
-' fgap_coefs(gapminder::gapminder)
+fgap_coefs(gapminder::gapminder)
 
 ###fgap_rw()
 
-This function could write and read data frames to plain text delimited files while
-'retaining factor level and by writing/reading a companion file?  
+This function takes the `gapmider` excerpt data frame and 
+compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.
 
 `' @examples`
-' fgap_rw(gapminder::gapminder)
+fgap_rw(gapminder::gapminder)

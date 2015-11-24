@@ -2,7 +2,7 @@
 % Please edit documentation in R/fgap_rw.R
 \name{fgap_rw}
 \alias{fgap_rw}
-\title{This function shows how takes the `gapmider` excerpt data frame and 
+\title{This function shows how takes the `gapmider` excerpt data frame and
 compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.}
 \usage{
 fgap_rw(dat, na.rm = TRUE)
@@ -16,7 +16,7 @@ fgap_rw(dat, na.rm = TRUE)
 txt and rds files and a mini data frame
 }
 \description{
-This function shows how takes the `gapmider` excerpt data frame and 
+This function shows how takes the `gapmider` excerpt data frame and
 compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.
 }
 \examples{
