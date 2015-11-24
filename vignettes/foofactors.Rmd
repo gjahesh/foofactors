@@ -38,3 +38,5 @@ compares `write.table()` and `saveRDS()` functions on mini data frame that is th
 
 `' @examples`
 fgap_rw(gapminder::gapminder)
+
++ Note : The idea was taken from Jenny's lecture on [Getting Data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html), I basically applied my coefficents ( from fgap_coefs() function ) to test the comparability of these write methods and their affects on Factors in data.

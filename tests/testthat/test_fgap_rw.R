@@ -2,7 +2,7 @@ context("fgap_rw()")
 
 test_that("fgaps_coefs() works fine?!",{
   library(gapminder)
-  test_gcoefs <- fgap_rw(gapminder)
+  test_gcoefs <- fgap_rw(gapminder::gapminder)
   expect_is(test_gcoefs,"data.frame")
 })
 

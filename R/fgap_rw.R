@@ -10,7 +10,7 @@
 #' fgap_rw(gapminder::gapminder)
 fgap_rw <- function(dat, na.rm= TRUE){
 
-   # Apply gfits() function to the grouped variables country and continent of gapminder data
+   # Apply gfgap_coefs()function to the grouped variables country and continent of gapminder data
   gfits<- dat %>%
     group_by(country, continent) %>%
     do(fgap_coefs(.))
@@ -39,6 +39,10 @@ fgap_rw <- function(dat, na.rm= TRUE){
   # add a new coulmn to countryLevel that's the tail end of the `jCoefs.txt`
   countryLevels$postTable <- tail(levels(jCoefsTable$country))
 
+  #Clean up
+  file.remove(list.files(pattern = "^jCoef"))
+
   # Compare the two files i.e. 'jCoefs.txt' and `jCoefs.RDS` with the original data.
   countryLevels
+
 }
