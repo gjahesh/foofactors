@@ -32,7 +32,6 @@ fgap_rw <- function(dat, na.rm= TRUE){
 
   # Read the 'jCoefs.rds` file with `readRDS()`
   jCoefsRDS <- readRDS("jCoefs.rds")
-
   # add a new coulmn to countryLevel that's the tail end of the `jCoefs.RDS`
   countryLevels$postRDS <- tail(levels(jCoefsRDS$country))
 
@@ -44,5 +43,5 @@ fgap_rw <- function(dat, na.rm= TRUE){
 
   # Compare the two files i.e. 'jCoefs.txt' and `jCoefs.RDS` with the original data.
   countryLevels
-
+  jCoefsRDS
 }
