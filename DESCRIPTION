@@ -6,7 +6,7 @@ Description: Factors have driven people to extreme measures, like ordering
     custom conference ribbons and laptop stickers to express how we
     feel about stringsAsFactors. And yet, sometimes you need them. Can they
     be made less maddening? Let's find out.
-Depends: 
+Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
@@ -16,6 +16,7 @@ Suggests: testthat,
     rmarkdown
 Imports: dplyr,
     robustbase,
+    readr,
     gapminder
 URL: https://github.com/gjahesh/foofactors
 BugReports: https://github.com/gjahesh/foofactors/issues

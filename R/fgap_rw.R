@@ -39,7 +39,7 @@ fgap_rw <- function(dat, na.rm= TRUE){
   countryLevels$postTable <- tail(levels(jCoefsTable$country))
 
   #Clean up
-  file.remove(list.files(pattern = "^jCoef"))
+  #file.remove(list.files(pattern = "^jCoef"))
 
   # Compare the two files i.e. 'jCoefs.txt' and `jCoefs.RDS` with the original data.
   countryLevels

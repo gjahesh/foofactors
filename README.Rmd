@@ -18,12 +18,14 @@ There work flow of the building a package is well described in [Jenny's Write yo
 ### Steps for installing the `foofactors` package
 ####1. Install and load `devtools`
 
+```
 install.packages("devtools")  
 
 library(devtools)  
 
 devtools::install_github("gjahesh/foofactors")  
- 
+````
+
 ####2. Loading foofactors
 
 devtools::library(foofactors)
@@ -33,4 +35,29 @@ devtools::library(foofactors)
 2. Tests for functions are in the `test` folder
 3. Documentation could be found in DESCRIPTION file and `vignette` folder
 4. You could always look at the help file by typing `?function name` example:`?fgap_coefs`
+
+###4. Examples for running `fooctors`
+
++ `fbind()` example
+```
+fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+```
+
++ `freq_out()` example
+
+```
+freq_out(iris$Species)
+```
+
++ `fgap_coefs()` example
+
+```
+fgap_rw(gapminder::gapminder)
+```
+
++ `fgap_rw()` example
+
+```
+fgap_rw(gapminder::gapminder)
+```
 

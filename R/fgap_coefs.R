@@ -17,4 +17,6 @@ fgap_coefs <- function(dat,na.rm = FALSE){
   r_coef   <- coef(r_fit)
   gCoefs   <- setNames(data.frame(t(j_coef),t(r_coef)),
            c("intercept","slope","r_intercept","r_slope"))
+  write.csv(gCoefs,"gcoefs.csv")
+  gCoefs
 }

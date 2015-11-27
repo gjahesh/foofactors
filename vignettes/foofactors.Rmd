@@ -14,29 +14,72 @@ vignette: >
 Create a new factor from two existing factors, where the new factor's levels
 are the union of the levels of the input factors.  
 
-`' @examples`
+Example: 
+
+```
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+```
 
 ###freq_out()
 
 This function writes frequency table for a factor.  
 
-`' @examples`
-freq_out(iris$Species)
+Example:
 
+```
+freq_out(iris$Species)
+```
 ###fgap_coefs()
 
-Computes linear and robust regression coefficients for gapminder excerpt data frame. Description of the linear and robust coeffcients could be found [Homework4-Section2](https://github.com/STAT545-UBC/golnaz_jahesh/blob/master/STAT545_Homework/homework4/hw4_func.md)
+Computes linear and robust regression coefficients for gapminder excerpt data frame. Description of the linear and robust coeffcients could be found below and also in  [Homework4-Section2](https://github.com/STAT545-UBC/golnaz_jahesh/blob/master/STAT545_Homework/homework4/hw4_func.md)
 
-`' @examples`
+Example :
+
+```
 fgap_coefs(gapminder::gapminder)
+```
+The main body of `fgap_coefs` function, includes fitting the linear model regression with *lm*,  followed by getting the estimated coefficients and residuals from the linear model. Also Robust regression coefficients are calculated . The output of the function is a data frame including all the coefficients:
+
+1. **j_fit** - Linear regression model fit for life expectancy over year.
+
+2. **j_coef** - Coefficients of the Linear model [OLS](https://en.wikipedia.org/wiki/Ordinary_least_squares) (Ordinary Least Square)method, including intercept and slope .  
+
+4. **r_fit**: Robust Regression model fit for Life expectancy over year.  
+
+5. **r_coef**: Robust regression coefficients ,using fitting the robust linear regression model _lmrob_.    
 
 ###fgap_rw()
 
 This function takes the `gapmider` excerpt data frame and 
 compares `write.table()` and `saveRDS()` functions on mini data frame that is the result of the `fgap_coefs()`.
 
-`' @examples`
+Example:
+
+```
 fgap_rw(gapminder::gapminder)
+```
+Basically, the steps covered in the `fgap_rw()` are as follow:
+
+1. Applying gfgap_coefs()function to the grouped variables country and continent of gapminder data.
+
+2. Reorder factor country based on intercept.
+
+3. define a new variable that holds the original tail end of the data.
+
+4. Write coefficients in a txt file with write.table().
+
+5. Output the coefficients in an `RDS` format with saveRDS().
+
+6.  Read the `jCoefs.txt` file back with read.delim().
+
+7.  Read the `jCoefs.rds` file with `readRDS()`.
+
+8. add a new coulmn to countryLevel that's the tail end of the `jCoefs.RDS`
+
+9. add a new coulmn to countryLevel that's the tail end of the `jCoefs.txt`
+
+10. Compare the two files i.e. 'jCoefs.txt' and `jCoefs.RDS` with the original data.
+
+
 
 + Note : The idea was taken from Jenny's lecture on [Getting Data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html), I basically applied my coefficents ( from fgap_coefs() function ) to test the comparability of these write methods and their affects on Factors in data.
