@@ -7,7 +7,9 @@ There work flow of the building a package is well described in [Jenny's Write yo
 #### 1. Install and load `devtools`
 
 install.packages("devtools")
+
 library(devtools)
+
 devtools::install\_github("gjahesh/foofactors")
 
 #### 2. Loading foofactors
