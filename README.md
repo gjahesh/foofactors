@@ -6,7 +6,9 @@ There work flow of the building a package is well described in [Jenny's Write yo
 
 #### 1. Install and load `devtools`
 
-install.packages("devtools") library(devtools) devtools::install\_github("gjahesh/foofactors")
+install.packages("devtools")
+library(devtools)
+devtools::install\_github("gjahesh/foofactors")
 
 #### 2. Loading foofactors
 
@@ -17,3 +19,4 @@ devtools::library(foofactors)
 1.  Rscripts for functions are in `R` folder
 2.  Tests for functions are in the `test` folder
 3.  Documentation could be found in DESCRIPTION file and `vignette` folder
+4.  You could always look at the help file by typing `?function name` example:`?fgap_coefs`
